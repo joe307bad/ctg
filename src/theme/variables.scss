@@ -2,6 +2,15 @@
 // http://ionicframework.com/docs/v2/theming/
 $font-path: "../assets/fonts";
 
+@font-face {
+  font-family: 'futura_ltbook';
+  src: url('../assets/fonts/futuralt-book-webfont.woff2') format('woff2'),
+       url('../assets/fonts/futuralt-book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @import "ionic.globals";
 
 
@@ -25,10 +34,10 @@ $background-color:  #fff;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+  primary:    #eb9421,
+  secondary:  #505050,
   danger:     #f53d3d,
-  light:      #f4f4f4,
+  light:      #e7e7e7,
   dark:       #222
 );
 
