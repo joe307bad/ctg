@@ -29,8 +29,11 @@
     "@ngx-translate/core": "8.0.0",
     "@ngx-translate/http-loader": "^2.0.0",
     "ang2-parallax": "^1.0.2",
+    "angular-inport": "^1.0.3",
+    "animate.css": "^3.6.1",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
+    "is-in-viewport": "^3.0.0",
     "rxjs": "5.5.7",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.20"

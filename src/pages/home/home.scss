@@ -1,6 +1,20 @@
 @import '../../theme/variables.scss';
 
 
+ion-header img{ 
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.menu-button .button-inner{
+    width:20px;
+}
+
+.more-button .button-inner{
+    width:35px;
+}
 
 page-home {
 #graphic{
@@ -11,14 +25,14 @@ page-home {
     z-index: 1;
 }
 
-h1{
+h1#main-title{
     font-family: 'futura_ltbook', sans-serif;
     position: absolute;
     font-size: 40px;
     top: -204px;
     background: white;
     margin: 0px;
-    padding: 30px 30px 30px 30px;
+    padding: 30px 30px 30px 20px;
     left: 0;
     width: 100%;
     border-top:10px color($colors, primary) solid;
@@ -36,7 +50,7 @@ h1{
 	}
 
 	.main-content {
-		padding: 20px;
+		padding: 0px 20px 20px 20px;
 		background-color: white;
 		position: absolute;
 	}

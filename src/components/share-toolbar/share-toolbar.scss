@@ -1,0 +1,55 @@
+[share-toolbar]{
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0px;
+  padding: 10px 10px 10px 0px;
+  background-color: white;
+}
+
+ion-icon:before{
+    font-size:30px;
+    padding-left: 20px;
+}
+
+ion-icon:nth-of-type(1):before{
+        padding-left:0px;
+}
+
+
+ion-icon{
+
+    &[name=logo-twitter]{
+        color: #0084b4;
+    }
+    &[name=logo-facebook]{
+        color: #3b5998;
+    }
+    color:color($colors, primary);
+}
+
+[share-toolbar] h1{
+    font-size: 19px;
+    font-family: 'futura_ltbook', sans-serif;
+    position: absolute;
+    font-size: 20px;
+    top: 15px;
+    background: white;
+    margin: 0px;
+    /* padding: 30px 30px 30px 20px; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* border-top: 10px #eb9421 solid; */
+    /* float: left; */
+    display: inline-block;
+    max-width: 203px;
+    text-overflow: ellipsis;
+    /* word-wrap: normal; */
+    overflow: hidden;
+    padding-left: 16px;
+    white-space: nowrap;
+    margin-bottom: -3px;
+    /* padding-top: 10px; */
+}
