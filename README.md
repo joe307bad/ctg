@@ -4,5 +4,5 @@ TODO:
 * [ ] Build "profile" header for menu with profile picture and horizontal menu of options (account, messages, Saved Articles)
 * [ ] Build Player profile page
   * [ ] Large picture of Lebron James full body
-   * [ ] Three numbers/stats along the right side
+  * [ ] Three numbers/stats along the right side
   * [ ] Scroll down, sticky share toolbar, table with stats
