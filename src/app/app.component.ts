@@ -9,10 +9,25 @@ import { Settings } from '../providers/providers';
 
 @Component({
   template: `<ion-menu [content]="content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Pages</ion-title>
-      </ion-toolbar>
+    <ion-header class="menu-header">
+    <ion-item>
+    <ion-card>
+    <img src="/assets/img/jbad.jpg" />
+    <h1>Joe Badaczewski</h1>
+    <div padding>
+    <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      Account
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      Notifications
+    </ion-segment-button>
+    </ion-segment>
+    </div>
+    </ion-card>
+    </ion-item>
+    
+
     </ion-header>
 
     <ion-content>
@@ -33,17 +48,12 @@ export class MyApp {
 
   pages: any[] = [
     { title: 'Home', component: 'HomePage' },
-    { title: 'Tutorial', component: 'TutorialPage' },
-    { title: 'Welcome', component: 'WelcomePage' },
-    { title: 'Tabs', component: 'TabsPage' },
-    { title: 'Cards', component: 'CardsPage' },
-    { title: 'Content', component: 'ContentPage' },
-    { title: 'Login', component: 'LoginPage' },
-    { title: 'Signup', component: 'SignupPage' },
-    { title: 'Master Detail', component: 'ListMasterPage' },
-    { title: 'Menu', component: 'MenuPage' },
-    { title: 'Settings', component: 'SettingsPage' },
-    { title: 'Search', component: 'SearchPage' }
+    { title: 'Articles', component: 'TutorialPage' },
+    { title: 'Stats', component: 'WelcomePage' },
+    { title: 'Discussion', component: 'TabsPage' },
+    { title: 'About', component: 'CardsPage' },
+    { title: 'Subscribe', component: 'ContentPage' },
+    { title: 'Settings', component: 'ContentPage' }
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

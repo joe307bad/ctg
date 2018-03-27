@@ -1,5 +1,39 @@
 @import '../../theme/variables.scss';
 
+.menu-header{
+    h1 {
+        font-family: 'futura_ltbook', sans-serif;
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        right: 40px;
+        font-size: 23px;
+        position: absolute;
+        top: 50%;
+        margin-top: -43px;
+        right: 36px;
+        width: 130px;
+        word-break: normal;
+        word-wrap: normal;
+        white-space: normal;
+    }
+}
+
+.menu-header img{
+    width: 150px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+ion-card h2{
+    padding-top:10px;
+}
+
+ion-card:nth-of-type(2n){
+    margin-top: 20px !important;
+}
+
 [name=chatbubbles]:before, [name=star]:before{
     color:white;
 }
