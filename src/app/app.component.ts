@@ -14,13 +14,21 @@ import { Settings } from '../providers/providers';
     <ion-card>
     <img src="/assets/img/jbad.jpg" />
     <h1>Joe Badaczewski</h1>
-    <div padding>
+
+    <button id="account-button" ion-button icon-left>
+    <ion-icon name="contact"></ion-icon>
+    @joe307bad
+  </button>
+    <div style="padding-left:0px;padding-right:0px;" padding>
     <ion-segment [(ngModel)]="pet">
     <ion-segment-button value="kittens">
-      Account
+      Messages
     </ion-segment-button>
     <ion-segment-button value="puppies">
       Notifications
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      Saved Articles
     </ion-segment-button>
     </ion-segment>
     </div>

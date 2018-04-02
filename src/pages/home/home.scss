@@ -1,5 +1,61 @@
 @import '../../theme/variables.scss';
 
+#graphic1{
+    position: absolute;
+    top: -376px;
+    right: 0px;
+    z-index: 1;
+}
+
+#player-profile-header{
+    z-index: 999;
+    position: absolute;
+    right: 0px;
+    /* bottom: 0; */
+    top: -439px;
+    color: white;
+    background-color: #eb9421;
+    padding: 13px;
+    font-size: 17px;
+}
+
+#feature-article-header{
+    z-index: 999;
+    position: absolute;
+    left: 0px;
+    /* bottom: 0; */
+    top: -267px;
+    color: white;
+    background-color: color($colors, primary);
+    padding: 13px;
+    font-size: 17px;
+}
+
+#author{
+    z-index: 999;
+    position: absolute;
+    right: 0px;
+    /* bottom: 0; */
+    top: -55px;
+    color: white;
+    background-color: color($colors, primary);
+    padding: 10px;
+    font-size: 17px;
+}
+
+#account-button{
+    
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    right: 28px;
+    bottom: 74px;
+
+    ion-icon{
+    color: white;
+    }
+}
+
 .menu-header{
     h1 {
         font-family: 'futura_ltbook', sans-serif;
@@ -11,7 +67,7 @@
         font-size: 23px;
         position: absolute;
         top: 50%;
-        margin-top: -43px;
+        margin-top: -70px;
         right: 36px;
         width: 130px;
         word-break: normal;
@@ -83,7 +139,6 @@ ion-item iframe{
     width:35px;
 }
 
-page-home {
 #graphic{
     height: 75px;
     position: absolute;
@@ -109,19 +164,53 @@ h1#main-title{
 // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
+h1#main-title{
+    font-family: 'futura_ltbook', sans-serif;
+    position: absolute;
+    font-size: 40px;
+    top: -204px;
+    background: white;
+    margin: 0px;
+    padding: 30px 30px 30px 20px;
+    left: 0;
+    width: 100%;
+    border-top:10px color($colors, primary) solid;
+
+}
+h1#main-title1{
+    font-family: 'futura_ltbook', sans-serif;
+    position: absolute;
+    font-size: 40px;
+    top: -118px;
+    background: white;
+    margin: 0px;
+    padding: 30px 30px 30px 20px;
+    left: 0;
+    width: 100%;
+    border-top:10px color($colors, primary) solid;
+
+}
+
 	.background-image {
 		background-image: url(https://cleaningtheglass.com/wp-content/uploads/2018/03/RoLoTeam.jpg);
 		background-size: cover;
 		background-position: center;
 		height: 100%;
-	}
+    }
+    
+    .background-image1{
+		background-image: url(https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2016/02/02/nikola_jokic_nuggets_.jpg?itok=PFJuq3Uu);
+		background-size: cover;
+		background-position: center;
+		height: 100%;
+      }
 
 	.main-content {
 		padding: 0px 20px 20px 20px;
 		background-color: white;
 		position: absolute;
 	}
-}
+
 
 ion-navbar{
     text-align:center;

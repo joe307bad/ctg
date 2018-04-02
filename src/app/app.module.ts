@@ -14,6 +14,12 @@ import { Settings } from '../providers/providers';
 import { User } from '../providers/providers';
 import { Api } from '../providers/providers';
 import { MyApp } from './app.component';
+import { ElasticHeader } from '../components/elastic-header';
+import { InViewport } from '../components/in-viewport';
+import { ShareToolbar } from '../components/share-toolbar/share-toolbar';
+import { HomePageModule } from '../pages/home/home.module';
+import { PlayerProfilePageModule } from '../pages/player-profile/player-profile.module';
+import { DirectivesModule } from '../components/directives.module';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -43,6 +49,8 @@ export function provideSettings(storage: Storage) {
   imports: [
     BrowserModule,
     HttpClientModule,
+    HomePageModule,
+    PlayerProfilePageModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

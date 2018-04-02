@@ -1,9 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
- 
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the HomePage page.
+ * Generated class for the PlayerProfilePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,10 +10,10 @@ import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-player-profile',
+  templateUrl: 'player-profile.html',
 })
-export class HomePage {
+export class PlayerProfilePage {
 
   @ViewChild('maintitle') title; 
   
@@ -26,7 +25,6 @@ export class HomePage {
   ngAfterViewInit() {
     
   }
-  
   onScroll(){
     var inView =this.check();
     if(inView.value){
@@ -73,14 +71,5 @@ export class HomePage {
     }
     return event;
     //this.inViewport.emit(event);
-  
 }
-
-  inViewport($event){
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
-  }
-
 }

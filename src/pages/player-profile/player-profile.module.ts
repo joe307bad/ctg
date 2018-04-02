@@ -1,21 +1,18 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { HomePage } from './home';
+import { PlayerProfilePage } from './player-profile';
 import { ElasticHeader } from '../../components/elastic-header';
 import { ShareToolbar } from '../../components/share-toolbar/share-toolbar';
-import { NgInviewModule } from 'angular-inport'; 
 import { InViewport } from '../../components/in-viewport';
 import { DirectivesModule } from '../../components/directives.module';
 
-
 @NgModule({
   declarations: [
-    HomePage
+    PlayerProfilePage
   ],
   imports: [
-    DirectivesModule,         
-    NgInviewModule,
-    IonicPageModule.forChild(HomePage)
+    DirectivesModule,
+    IonicPageModule.forChild(PlayerProfilePage),
   ],
 })
-export class HomePageModule {}
+export class PlayerProfilePageModule {}
