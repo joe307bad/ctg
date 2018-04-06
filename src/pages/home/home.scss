@@ -1,8 +1,53 @@
 @import '../../theme/variables.scss';
 
+ion-header:after{
+    display:none;
+}
+
+.stat-line-value{
+    font-family: 'futura_ltbook', sans-serif;
+    font-size: 30px;
+}
+
+.stat-line-desc{
+    position: absolute;
+    top: 3px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 15px;
+    /* left: 95px; */
+    right: -142px;
+    width: 128px;
+    word-wrap: normal;
+}
+
+#stat-line{
+    position: absolute;
+    top: -269px;
+    z-index: 99;
+    right: 178px;
+    padding-bottom: 20px;
+
+    li{
+        padding-bottom: 20px;
+        list-style: none;
+        /* font-size: 23px; */
+        position: relative;
+
+        &:nth-of-type(2){
+    margin-left: -20px;
+        }
+
+        &:nth-of-type(3){
+            
+    margin-left: -48px;
+        }
+    }
+}
+
 #graphic1{
     position: absolute;
-    top: -375px;
+    top: -371px;
     right: 0px;
     z-index: 1;
 }
@@ -10,9 +55,9 @@
 #player-profile-header{
     z-index: 999;
     position: absolute;
-    right: 0px;
+    right: -0px;
     /* bottom: 0; */
-    top: -438px;
+    top: -430px;
     color: white;
     background-color: #eb9421;
     padding: 13px;
@@ -24,7 +69,7 @@
     position: absolute;
     left: 0px;
     /* bottom: 0; */
-    top: -267px;
+    top: -258px;
     color: white;
     background-color: color($colors, primary);
     padding: 13px;
@@ -48,8 +93,10 @@
     color: white;
     font-size: 14px;
     position: absolute;
-    bottom: 74px;
-    right: 35px;
+    bottom: 83px;
+
+    right: 45px;
+    text-transform: lowercase;
 
     ion-icon{
     color: white;
@@ -89,6 +136,7 @@ ion-card h2{
 ion-card:nth-of-type(2n){
     margin-top: 20px !important;
 }
+
 
 [name=chatbubbles]:before, [name=star]:before{
     color:white;
@@ -142,7 +190,7 @@ ion-item iframe{
 #graphic{
     height: 75px;
     position: absolute;
-    top: -221px;
+    top: -215px;
     right: 0px;
     z-index: 1;
 }
@@ -151,7 +199,7 @@ h1#main-title{
     font-family: 'futura_ltbook', sans-serif;
     position: absolute;
     font-size: 40px;
-    top: -203px;
+    top: -199px;
     background: white;
     margin: 0px;
     padding: 30px 30px 30px 20px;
@@ -164,9 +212,9 @@ h1#main-title1{
     font-family: 'futura_ltbook', sans-serif;
     position: absolute;
     font-size: 40px;
-    top: -117px;
     background: white;
     margin: 0px;
+    top: -113px;
     padding: 30px 30px 30px 20px;
     left: 0;
     width: 100%;

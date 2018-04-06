@@ -28,7 +28,7 @@
       <button class='menu-button' ion-button menuToggle left>
         <ion-icon name="menu"></ion-icon>
       </button>
-      <img src="/assets/img/ctg-logo.png" style="display:inline-block" height="40px"/>
+      <img src="./assets/img/ctg-logo.png" style="display:inline-block" height="40px"/>
       
       <ion-buttons class='more-button' end>
           <button ion-button>
@@ -57,7 +57,7 @@
         </ion-segment> -->
 
           <h2 id="feature-article-header">Featured Article</h2>
-          <img id='graphic' src='/assets/img/ctg-graphic-1.png' />
+          <img id='graphic' src='./assets/img/ctg-graphic-1.png' />
           <h1 #maintitle id='main-title'>
             The Whole is Greater than the Sum
           </h1>
@@ -124,10 +124,10 @@
             </ion-row>
           
           </ion-card>
-          <ion-card>
+          <ion-card [navPush]="playerProfile">
 
                 <ion-item>
-                  <img src="/assets/img/NikolaJokic.jpg" />
+                  <img src="./assets/img/NikolaJokic.jpg" />
                   <h2>Player Profile: Nikola Jokic</h2>
                   <p>November 5, 1955</p>
                 </ion-item>

@@ -28,7 +28,7 @@
     <button class='menu-button' ion-button menuToggle left>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <img src="/assets/img/ctg-logo.png" style="display:inline-block" height="40px"/>
+    <img src="./assets/img/ctg-logo.png" style="display:inline-block" height="40px"/>
     
     <ion-buttons class='more-button' end>
         <button ion-button>
@@ -56,29 +56,24 @@
           </ion-segment-button>
       </ion-segment> -->
 
-        <h2 id="player-profile-header">Player Profile</h2>
-        <img id='graphic1' src='/assets/img/ctg-graphic1.png' />
+        <h2 id="player-profile-header" *ngIf="visible" [@slideInOut]>Player Profile</h2>
+        <img id='graphic1' src='./assets/img/ctg-graphic1.png' />
         <h1 #maintitle id='main-title1'>
           Nikola Jokic
         </h1>
+        <ul id="stat-line">
+          <li *ngIf="visible1" [@slideInOut1]><span class="stat-line-value">21.2</span> <span class="stat-line-desc">minutes per game</span></li>
+          <li *ngIf="visible2" [@slideInOut2]><span class="stat-line-value">94%</span> <span class="stat-line-desc">assist percentage</span></li>
+          <li *ngIf="visible3" [@slideInOut3]><span class="stat-line-value">93:0.9</span> <span class="stat-line-desc">assist to usage percentage</span></li>
+        </ul>
         <div id="article-content">
           <div share-toolbar>
             <h1 class="animated fadeIn"  *ngIf='showScrolledTitle'>
             The Whole is Greater than the Sum
             </h1>
           </div>
-  
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           
-          
+       <img src='./assets/img/grid.PNG' />  
         </div>
         <button ion-button icon-left>
           <ion-icon name="star"></ion-icon>
@@ -126,7 +121,7 @@
         <ion-card>
 
               <ion-item>
-                <img src="/assets/img/NikolaJokic.jpg" />
+                <img src="./assets/img/NikolaJokic.jpg" />
                 <h2>Player Profile: Nikola Jokic</h2>
                 <p>November 5, 1955</p>
               </ion-item>

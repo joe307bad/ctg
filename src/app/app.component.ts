@@ -10,9 +10,7 @@ import { Settings } from '../providers/providers';
 @Component({
   template: `<ion-menu [content]="content">
     <ion-header class="menu-header">
-    <ion-item>
-    <ion-card>
-    <img src="/assets/img/jbad.jpg" />
+    <img src="./assets/img/jbad.jpg" />
     <h1>Joe Badaczewski</h1>
 
     <button id="account-button" ion-button icon-left>
@@ -32,8 +30,6 @@ import { Settings } from '../providers/providers';
     </ion-segment-button>
     </ion-segment>
     </div>
-    </ion-card>
-    </ion-item>
     
 
     </ion-header>

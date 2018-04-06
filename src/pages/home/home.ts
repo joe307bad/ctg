@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
+import { PlayerProfilePage } from '../player-profile/player-profile';
  
 
 /**
@@ -19,6 +20,7 @@ export class HomePage {
   @ViewChild('maintitle') title; 
   
   showScrolledTitle: boolean;
+  playerProfile = PlayerProfilePage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

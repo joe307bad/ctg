@@ -20,7 +20,7 @@ import { ShareToolbar } from '../components/share-toolbar/share-toolbar';
 import { HomePageModule } from '../pages/home/home.module';
 import { PlayerProfilePageModule } from '../pages/player-profile/player-profile.module';
 import { DirectivesModule } from '../components/directives.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function createTranslateLoader(http: HttpClient) {
@@ -48,6 +48,7 @@ export function provideSettings(storage: Storage) {
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     HomePageModule,
     PlayerProfilePageModule,
